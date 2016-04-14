@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language: C/C++ (APIs banned by the Microsoft SDL)
-" Maintainer: Ramsey Dow <ramsey@casabasecurity.com>
-" Last Change: 2009-08-22 17:15:05
-" Version: 1.0
+" Maintainer: Ramsey Dow <ramsey@casaba.com>
+" Last Change: 2011-05-03 09:44:00
+" Version: 1.1 - updated to SDL 5.0
 " Banned API Details: http://msdn.microsoft.com/en-us/library/bb288454.aspx
 
 " TO INSTALL: 
@@ -13,11 +13,13 @@
 " Banned string copy functions and replacements
 syn keyword banned strcpy wcscpy _tcscpy _mbscpy StrCpy StrCpyA StrCpyW
 syn keyword banned lstrcpy lstrcpyA lstrcpyW strcpyA strcpyW _tccpy _mbccpy
+syn keyword banned _ftcscpy
 
 " Banned string concatenation functions and replacements
 syn keyword banned strcat wcscat _tcscat _mbscat StrCat StrCatA StrCatW
 syn keyword banned lstrcat lstrcatA lstrcatW StrCatBuffW StrCatBuff
 syn keyword banned StrCatBuffA StrCatChainW strcatA strcatW _tccat _mbccat
+syn keyword banned _ftcscat
 
 " Banned sprintf functions and replacements
 syn keyword banned wnsprintf wnsprintfA wnsprintfW sprintfW sprintfA wsprintf
@@ -32,7 +34,7 @@ syn keyword banned vswprintf
 
 " Banned variable argument 'n' sprintf functions and replacements
 syn keyword banned _vsnprintf _vsnwprintf _vsntprintf wvnsprintf wvnsprintfA
-syn keyword banned wvnsprintfW
+syn keyword banned wvnsprintfW vsnprintf
 
 " Banned 'n' string copy functions and replacements
 syn keyword banned strncpy wcsncpy _tcsncpy _mbsncpy _mbsnbcpy StrCpyN
@@ -47,8 +49,8 @@ syn keyword banned lstrcatnA lstrcatnW lstrcatn _fstrncat
 " Banned string tokenizing functions and replacements
 syn keyword banned strtok _tcstok wcstok _mbstok
 
-" Banned Makepath functions and replacements
-syn keyword banned Makepath _tmakepath _makepath _wmakepath
+" Banned makepath functions and replacements
+syn keyword banned makepath _tmakepath _makepath _wmakepath
 
 " Banned Splitpath functions and replacements
 syn keyword banned _splitpath _tsplitpath _wsplitpath
@@ -79,6 +81,12 @@ syn keyword banned alloca _alloca
 
 " Banned string length functions and replacements
 syn keyword banned strlen wcslen _mbslen _mbstrlen StrLen lstrlen
+
+" Banned memory copying functions and replacements
+syn keyword banned memcpy RtlCopyMemory CopyMemory wmemcpy
+
+" Banned ChangeWindowMessageFilter
+syn keyword banned ChangeWindowMessageFilter
 
 " console/terminal settings
 if has("win32")
