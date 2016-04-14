@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language: C/C++ (highlights APIs banned by Microsoft's SDL)
 " Maintainer: Ramsey Dow <yesmar@gmail.com>
-" Last Change: 2015-01-29 12:02:30
-" Version: 2.0 - updated to SDL 6.0
+" Last Change: 2016-04-14 14:15:38
+" Version: 3.0 - verified in compliance with SDL 7.0
 
 " APIs collected from Microsoft's publicly available banned.h header file:
 " http://www.microsoft.com/en-us/download/details.aspx?id=24817
