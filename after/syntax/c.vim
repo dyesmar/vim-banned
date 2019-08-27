@@ -8,8 +8,8 @@
 " https://github.com/x509cert/banned/blob/master/banned.h
 
 " TO INSTALL:
-" copy this file to your runtimepath in after/syntax dir as c.vim and cpp.vim.
-" to determine what your runtimepath is based on your OS please refer to:
+" Copy this file to your runtimepath in after/syntax dir as c.vim and cpp.vim.
+" To determine what your runtimepath is based on your OS please refer to:
 " http://vimdoc.sourceforge.net/htmldoc/options.html#%27runtimepath%27
 
 " SDL 6.0 Requirements
