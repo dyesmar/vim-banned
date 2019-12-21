@@ -63,8 +63,8 @@ syn keyword required_banned sprintfA
 syn keyword required_banned sprintfW
 syn keyword required_banned strcat
 syn keyword required_banned StrCat
-syn keyword required_banned StrCatA
 syn keyword required_banned strcatA
+syn keyword required_banned StrCatA
 syn keyword required_banned StrCatBuff
 syn keyword required_banned StrCatBuffA
 syn keyword required_banned StrCatBuffW
@@ -76,11 +76,11 @@ syn keyword required_banned strcatW
 syn keyword required_banned StrCatW
 syn keyword required_banned strcpy
 syn keyword required_banned StrCpy
-syn keyword required_banned StrCpyA
 syn keyword required_banned strcpyA
+syn keyword required_banned StrCpyA
 syn keyword required_banned StrCpyN
-syn keyword required_banned strcpynA
 syn keyword required_banned StrCpyNA
+syn keyword required_banned strcpynA
 syn keyword required_banned StrCpyNW
 syn keyword required_banned strcpyW
 syn keyword required_banned StrCpyW
@@ -88,8 +88,8 @@ syn keyword required_banned strncat
 syn keyword required_banned StrNCat
 syn keyword required_banned StrNCatA
 syn keyword required_banned StrNCatW
-syn keyword required_banned StrNCpy
 syn keyword required_banned strncpy
+syn keyword required_banned StrNCpy
 syn keyword required_banned StrNCpyA
 syn keyword required_banned StrNCpyW
 syn keyword required_banned swprintf
