@@ -24,13 +24,13 @@ If you don't have a preferred installation method, I recommend using [vim-plug](
 For `vim-plug`:
 
 ```vim
-Plug 'yesmar/vim-banned'
+Plug 'casabaramsey/vim-banned'
 ```
 
 For `pathogen`:
 
 ```bash
-git clone https://github.com/yesmar/vim-banned ~/.vim/bundle/vim-banned
+git clone https://github.com/casabaramsey/vim-banned ~/.vim/bundle/vim-banned
 ```
 
 Others remain an exercise for you, dear reader.
